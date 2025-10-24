@@ -77,7 +77,16 @@ From now on, please use this name for both `git clone` and `docker pull` command
 ![Multi-agent](docs/res/physics.png)
 ![Multi-agent 2](docs/res/physics-2.png)
 
-4. **Completely Customizable and Extensible**
+4. **CogZero: Autonomous Multi-Agent Orchestration**
+
+- **CogZero** is an OpenCog-inspired cognitive architecture for Agent Zero, providing autonomous multi-agent orchestration capabilities.
+- Implements evolutionary adaptation where agents evolve based on fitness and environmental feedback.
+- Features living dynamical systems with homeostatic mechanisms and feedback loops.
+- Provides intelligent agent coordination, knowledge graph integration, and performance monitoring.
+- Agents automatically register with the orchestrator and track metrics like success rate, response time, and fitness scores.
+- Read more in the [CogZero documentation](./docs/cogzero.md).
+
+5. **Completely Customizable and Extensible**
 
 - Almost nothing in this framework is hard-coded. Nothing is hidden. Everything can be extended or changed by the user.
 - The whole behavior is defined by a system prompt in the **prompts/default/agent.system.md** file. Change this prompt and change the framework dramatically.
@@ -87,7 +96,7 @@ From now on, please use this name for both `git clone` and `docker pull` command
 
 ![Prompts](/docs/res/prompts.png)
 
-5. **Communication is Key**
+6. **Communication is Key**
 
 - Give your agent a proper system prompt and instructions, and it can do miracles.
 - Agents can communicate with their superiors and subordinates, asking questions, giving instructions, and providing guidance. Instruct your agents in the system prompt on how to communicate effectively.
@@ -163,6 +172,7 @@ docker run -p 50001:80 agent0ai/agent-zero
 | [Extensibility](./docs/extensibility.md) | Extending Agent Zero |
 | [Connectivity](./docs/connectivity.md) | External API endpoints, MCP server connections, A2A protocol |
 | [Architecture](./docs/architecture.md) | System design and components |
+| [CogZero](./docs/cogzero.md) | OpenCog-inspired autonomous multi-agent orchestration |
 | [Contributing](./docs/contribution.md) | How to contribute |
 | [Troubleshooting](./docs/troubleshooting.md) | Common issues and their solutions |
 
